@@ -1,5 +1,5 @@
-// This file began as a template by Prudence Wong that provided the 
-// function definitions (but the function bodies were all written by me)
+// This file began as a template by Prudence Wong that provided the function definitions 
+// (but the function bodies were all written by me with the exception of the bugOne function)
 
 // Enter your name: Matthew Corthorne
 // Enter your student ID: 201507354
@@ -57,4 +57,22 @@ class COMP108W02 {
 			multiple = i * numberX;
 		}
 	}
+
+	// Aim: to output all common multiples of x and y up to 100
+	// Find the bug and fix it by altering ONE line of code
+	// (This function was written by Prudence Wong and has been kept in to prevent the checker from throwing errors)
+	static void bugOne(int numberX, int numberY) {
+		int i, bound;
+		
+		i = 0;
+		bound = 100;
+		System.out.print("Common Multiples up to " + bound + ": ");
+		while (i <= bound) {
+			if (i%numberX == 0)
+				System.out.print(i + " ");
+			i+=numberY;
+		}
+		System.out.println();
+	}
+	
 }
