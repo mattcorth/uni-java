@@ -36,7 +36,7 @@ Here is a brief summary of what each lab covers:
   - `searchMax` is a sequential search that returns the largest number in the list
   - Any other methods in this file were written by my lecturer
 - *week-7* - `COMP108W07.java`
-  - This lab was on performing the more advanced node insertion and deletion operations
+  - This lab was on performing the more advanced node insertion and deletion operations on a linked list
   - `searchMoveToHead` is a sequential search that will move a node to the head of the linked list if found
   - `searchMoveToTail` is a sequential search that will move a node to the tail of the linked list if found
 - *week-8* - `COMP108W08.java`
