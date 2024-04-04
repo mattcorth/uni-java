@@ -1,23 +1,17 @@
-//
+// This file began as a template by Prudence Wong that provided the function definitions 
+// (but the function bodies were all written by me with the exception of printArray)
+
 // Enter your name: Matt Corthorne
 // Enter your student ID: 201507354
 //
-/*
-Time complexity of notExists() = O(n^2) where n is the length of the largest array (in this case array1). 
-This is because the longest and most time consuming  part of the method is the nested loop, so large that 
-the other lines are relatively insignificant
 
-Time complexity of count() also = O(n^2) where n is the lenth of the largest array (in this case array1). 
-This is because of the nested loop and the fact that the rest of the block of code isn't nearly as time 
-consuming as the loops.
-
-*/
 import java.util.*;
 import java.io.*;
 
 class COMP108W04 {
 
 	// print the content of an array of size n
+	// This function was written by Prudence Wong
 	static void printArray(int[] data, int n) {
 		int i;
 
