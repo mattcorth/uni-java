@@ -1,4 +1,6 @@
-//
+// This file began as a template by Prudence Wong that provided the function definitions 
+// (but the function bodies were all written by me with the exception of bugOne)
+
 // Enter your name: Matt Corthorne
 // Enter your student ID: 201507354
 //
@@ -149,6 +151,7 @@ class COMP108W03 {
 	
 	// print the smallest number and its position in an array of size n
 	// Find the bug and fix it by altering ONE line of code
+	// (This function was written by Prudence Wong and has been kept in to prevent the checker from throwing errors)
 	static void bugOne(int[] data, int n) {
 		int i, pos, min;
 
