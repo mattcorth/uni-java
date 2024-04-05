@@ -20,4 +20,4 @@ For assignments I will summarise the scenario and what I was tasked to create bu
 ### Labs
 - Throughout the module, I had six labs.
 - Labs were small programming tasks given to us on some weeks.
-- My solutions for these the labs can be found in the [`labs` directory](/labs).
+- My solutions for these the labs can be found in the [`labs` directory](/COMP108/labs).
