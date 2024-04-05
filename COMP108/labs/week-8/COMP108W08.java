@@ -1,23 +1,8 @@
-//
-// by Prudence Wong 2021-03-20
-//
+// This file began as a template by Dr Prudence Wong that provided the function definitions 
+// (but all function bodies up to and including searchMax() were written by me)
+
 // Name: Matt Corthorne
 // Student ID: 201507354
-//
-// Time complexity:
-// Express the worst case time complexity of your algorithm in big-O notation.
-// You can assume that there are
-// n nodes in the original database list,
-// r requests in the request sequence, and
-// k distinct requests in the request sequence.
-// Justify your answer.
-//
-// notExisits: O(n*r) as the program must loop through the entirety of the nodes and requests although in once a match has been found it does exit the n loop early.
-//
-// count: O(n*r) as the program must loop through the entirety of the nodes and requests, regardless of the number of distinct requests.
-//				 Even if the number of distinct values was important, my program would run the same as it must always check the full
-//				 list in case of repeats since it doesn't know which values are distinct.
-//
 
 class COMP108W08 {
 
@@ -73,6 +58,8 @@ class COMP108W08 {
 		}
 	}
 
+	// <------        Beyond this point, all methods were written by lecturer Dr Prudence Wong        ------>
+	
 	// DO NOT change this method
 	// insert newNode to the head of the list
 	public void insertHead(Node newNode) {
