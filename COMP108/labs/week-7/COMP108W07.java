@@ -29,10 +29,16 @@ class COMP108W07 {
 				head = new_Head;						// Set the head pointer to the new value
 
 				// The old node must now be deleted by changing the pointers for the adjacent nodes
-				curr = curr.prev;						// Set node to previous one
-				curr.next = curr.next.next;				// Set the next pointer to the node after the next one
-				curr = curr.next;						// Move curr pointer back 2
-				curr.prev = curr.prev.prev;				// Set the prev pointer to the node before the previous one
+				if (curr == tail) {		// If the node to be removed is at the tail of the list
+					curr = curr.prev;
+					curr.next = null;
+					tail = curr;
+				}	else {				// If the node to be removed is not at the tail of the list
+					curr = curr.prev;						// Set node to previous one
+					curr.next = curr.next.next;				// Set the next pointer to the node after the next one
+					curr = curr.next;						// Move curr pointer forward 2
+					curr.prev = curr.prev.prev;				// Set the prev pointer to the node before the previous one
+				}
 			}
 			curr = curr.next;
 		}
@@ -47,6 +53,7 @@ class COMP108W07 {
 
 		while (curr != null) {
 			if (curr.data == key) {
+				// New tail node is created and appended at the end of the list
 				Node new_Tail = new Node(curr.data);	// Create new node
 				new_Tail.prev = tail;					// Insert node in front of head node
 				new_Tail.next = null;					// Set value in front of new head to null as it is the head of the list
@@ -54,10 +61,18 @@ class COMP108W07 {
 				tail = new_Tail;						// Set the head pointer to the new value
 
 				// The old node must now be deleted by changing the pointers for the adjacent nodes
-				curr = curr.prev;						// Set node to previous one
-				curr.next = curr.next.next;				// Set the next pointer to the node after the next one
-				curr = curr.next;						// Move curr pointer back 2
-				curr.prev = curr.prev.prev;				// Set the prev pointer to the node before the previous one
+				// This process is slightly different depending on if the node is a head or not
+				if (curr == head) {		// If the node to be removed is at the head of the list
+					curr = curr.next;	
+					curr.prev = null;
+					head = curr;
+				}	else {				// If the node to be removed is not at the head of the list
+					curr = curr.prev;						// Set node to previous one
+					curr.next = curr.next.next;				// Set the next pointer to the node after the next one
+
+					curr = curr.next;						// Move curr pointer forward 2
+					curr.prev = curr.prev.prev;				// Set the prev pointer to the node before the previous one
+				}
 			}
 			curr = curr.next;
 		}

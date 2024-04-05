@@ -26,7 +26,6 @@ class COMP108W08 {
 			while (curr != null) {
 				if (curr.data == array[i]) {
 					found = true;
-					curr = tail.prev;
 				}
 				curr = curr.next;
 			}
