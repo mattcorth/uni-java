@@ -1,6 +1,6 @@
-//
-// by Prudence Wong 2021-03-20
-//
+// This file began as a template by Dr Prudence Wong that provided the function definitions 
+// (but all function bodies up to and including searchMoveToTail() were written by me)
+
 // Name: Matt Corthorne
 // Student ID: 201507354
 //
@@ -63,6 +63,7 @@ class COMP108W07 {
 		}
 	}
 
+	// <------        Beyond this point, all methods were written by lecturer Dr Prudence Wong        ------>
 
 	// DO NOT change this method
 	// insert newNode to the head of the list
