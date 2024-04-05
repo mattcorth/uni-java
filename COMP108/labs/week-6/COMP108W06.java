@@ -1,4 +1,6 @@
-//
+// This file began as a template by Dr Prudence Wong that provided the function definitions 
+// (but all function bodies up to and including searchMax() were written by me)
+
 // Enter your name: Matt Corthorne
 // Enter your student ID: 201507354
 //
@@ -14,7 +16,6 @@ class COMP108W06 {
 
 	// sequential search if key is in the list
 	// return true or false accordingly
-	// Do NOT change its signature
 	// You should implement a list traversal algorithm here
 	public boolean seqSearchList(int key) {
 		boolean found = false;
@@ -31,7 +32,6 @@ class COMP108W06 {
 
 	// sequential search to count how many times key appears is in the list
 	// return the count
-	// Do NOT change its signature
 	// You should implement a list traversal algorithm here
 	public int countList(int key) {
 		int count=0;
@@ -48,7 +48,6 @@ class COMP108W06 {
 
 	// finding the minimum number in the list
 	// return the minimum
-	// Do NOT change its signature
 	// You should implement a list traversal algorithm here
 	public int searchMin() {
 		int min=Integer.MAX_VALUE;
@@ -65,7 +64,6 @@ class COMP108W06 {
 
 	// finding the maximum number in the list
 	// return the maximum
-	// Do NOT change its signature
 	// You should implement a list traversal algorithm here
 	public int searchMax() {
 		int max=Integer.MIN_VALUE;
@@ -80,6 +78,8 @@ class COMP108W06 {
 		return max;
 	}
 
+	// <------        Beyond this point, all methods were written by lecturer Dr Prudence Wong        ------>
+	
 	// DO NOT change this method
 	// insert newNode to the head of the list
 	public void insertHead(Node newNode) {
