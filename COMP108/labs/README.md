@@ -1,7 +1,7 @@
 # Labs
 Labs were a series of smaller programming tasks relating to certain parts of previous lectures. 
 
-A lab folder involves two files:
+A lab folder contains (at minimum) two files:
 - one contains my code solutions.
   - This will have the filename `COMP108W0X`, where `X` is the lab number.
 - the other can be compiled and run to check whether or not my solutions worked.
